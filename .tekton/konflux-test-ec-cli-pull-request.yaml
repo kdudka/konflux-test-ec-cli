@@ -389,6 +389,8 @@ spec:
           value: $(tasks.prefetch-dependencies.results.SOURCE_ARTIFACT)
         - name: CACHI2_ARTIFACT
           value: $(tasks.prefetch-dependencies.results.CACHI2_ARTIFACT)
+        - name: KFP_GIT_URL
+          value: "https://gitlab.cee.redhat.com/osh/known-false-positives.git"
       runAfter:
         - build-image-index
       taskRef:
